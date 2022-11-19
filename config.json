@@ -6,7 +6,7 @@
     },
     "production": {
         "username": "natalie",
-        "host": "student-sign-in-database-server.database.windows.net",
+        "host": "student-sign-in-database-server-natalie-pratt.database.windows.net",
         "database": "student-sign-in-database",
         "dialect": "mssql",
         "ssl": true,
