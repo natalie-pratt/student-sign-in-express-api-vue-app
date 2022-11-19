@@ -42,9 +42,8 @@ export default {
     newStudentAdded(student) { // Method called when new student is added
       this.$student_api.addStudent(student).then( () => {
         this.updateStudents() // Call method to update students with the student object data
-      }).catch(err => {
-        let msg = err.response.data.join(', ')
-        alert('Error adding student:\n' + msg)
+      }).catch( () => {
+        alert('Error adding student - StarID must be unique')
       })
     },
     studentArrivedOrLeft(student, present) { // Method  called when 'present' checkbox is checked/unchecked
